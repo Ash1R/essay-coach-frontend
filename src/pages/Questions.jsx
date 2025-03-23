@@ -38,7 +38,7 @@ export default function Questions() {
       if (alreadyFollowedUp) return;
 
       try {
-        const res = await fetch('https://pleasant-rooster-illegally.ngrok-free.app/api/followup', {
+        const res = await fetch('https://5cc5-128-84-124-174.ngrok-free.app//api/followup', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
@@ -75,7 +75,7 @@ export default function Questions() {
       const reflections = { ...answers };
       delete reflections[0];
 
-      const res = await fetch('https://pleasant-rooster-illegally.ngrok-free.app/api/suggestions', {
+      const res = await fetch('https://5cc5-128-84-124-174.ngrok-free.app//api/suggestions', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
