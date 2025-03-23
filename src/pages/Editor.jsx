@@ -37,7 +37,7 @@ export default function Editor() {
   const handleReview = async () => {
     const newDraft = editor?.getText() || '';
     const oldDraft = oldDraftRef.current;
-
+//help
     setReviewLoading(true);
     try {
       const res = await fetch('https://5cc5-128-84-124-174.ngrok-free.app//api/compare-drafts', {
