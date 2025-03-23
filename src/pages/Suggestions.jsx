@@ -13,7 +13,7 @@ export default function Suggestions() {
 
     const fetchSuggestions = async () => {
       try {
-        const res = await fetch('http://localhost:3000/api/suggestions', {
+        const res = await fetch('https://pleasant-rooster-illegally.ngrok-free.app/api/suggestions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({

@@ -15,7 +15,7 @@ export function IdeasScreen() {
     const profile = `Personality: ${quizAnswers.join(', ')}\nBuilt/fixed: ${prompts.q1}\nChallenge: ${prompts.q2}\nHelped: ${prompts.q3}`;
 
     const fetchIdeas = async () => {
-      const res = await fetch("http://localhost:3000/api/ideas", {
+      const res = await fetch("https://pleasant-rooster-illegally.ngrok-free.app/api/ideas", {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ profile })

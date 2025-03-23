@@ -40,7 +40,7 @@ export default function Editor() {
 
     setReviewLoading(true);
     try {
-      const res = await fetch('http://localhost:3000/api/compare-drafts', {
+      const res = await fetch('https://pleasant-rooster-illegally.ngrok-free.app/api/compare-drafts', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ oldDraft, newDraft }),
@@ -65,7 +65,7 @@ const highlightErrors = async () => {
   setHighlightedIssues([]);
 
   try {
-    const res = await fetch('http://localhost:3000/api/interview-review', {
+    const res = await fetch('https://pleasant-rooster-illegally.ngrok-free.app/api/interview-review', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ transcript: text }),

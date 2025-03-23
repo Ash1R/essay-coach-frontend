@@ -12,7 +12,7 @@ export function AnswerCompareScreen() {
 
   const compareDrafts = async () => {
     setLoading(true);
-    const res = await fetch("http://localhost:3000/api/compare-drafts", {
+    const res = await fetch("https://pleasant-rooster-illegally.ngrok-free.app/api/compare-drafts", {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ oldDraft, newDraft }),

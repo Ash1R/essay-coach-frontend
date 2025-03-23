@@ -17,7 +17,7 @@ export function StorySuggestions() {
       const profile = `Personality Traits: ${traits.join(", ")}\n\nReflections:\n${reflections.q1}\n${reflections.q2}\n${reflections.q3}`;
 
       try {
-        const res = await fetch("http://localhost:3000/api/stories", {
+        const res = await fetch("https://pleasant-rooster-illegally.ngrok-free.app/api/stories", {
           method: "POST",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({ profile })
