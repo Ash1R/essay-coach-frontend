@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Home from './pages/Home';
-import Questions from './pages/Questions';
-import Suggestions from './pages/Suggestions';
-import Editor from './pages/Editor';
+import Home from './pages/Home.jsx';
+import Questions from './pages/Questions.jsx';
+import Suggestions from './pages/Suggestions.jsx';
+import Editor from './pages/Editor.jsx';
 import './index.css';
 
 
