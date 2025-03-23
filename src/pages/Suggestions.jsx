@@ -13,7 +13,7 @@ export default function Suggestions() {
 
     const fetchSuggestions = async () => {
       try {
-        const res = await fetch('https://5cc5-128-84-124-174.ngrok-free.app//api/suggestions', {
+        const res = await fetch('https://5cc5-128-84-124-174.ngrok-free.app/api/suggestions', {
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
